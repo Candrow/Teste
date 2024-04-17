@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Cadastral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <header>
+        <h1>Venha ser um de nossos clientes!</h1>
+        <p>O primeiro passo, é preencher esse formulário de cadastro.</p>
+    </header>
+    <form id="formulario">
+        <fieldset id="nomeclatura">
+            <legend>Dados Cadastrais</legend>
+
+                <label for="nome-cliente">Nome/Razão Social <span>(Nome e Sobrenome)</span></label>
+                <input type="text" id="nome-cliente" required minlength="3"/>
+
+                <label for="apelido-cliente">Apelido <span>(opcional)</span></label>
+                <input type="text" id="apelido-cliente" minlength="3"/>
+            <div class="grid">
+                <label for="cpf-cliente">CPF/CNPJ</label>
+                <input type="text" id="cpf-cliente" required minlength="11" maxlength="11"/>
+
+                <label for="ie-cliente">Inscrição Estadual</label>
+                <input type="text" id="cpf-cliente" required minlength="14" maxlength="15"/>
+            </div>    
+                <label for="telefone-cliente">Telefone</label>
+                <input type="tel" id="telefone-cliente" required minlength="8" maxlength="11"/>
+
+                <label for="email-cliente">E-mail</label>
+                <input type="email" id="email-cliente" required minlength="12"/>
+
+                <label for="rg-cliente">RG <span>(opcional)</span></label>
+                <input type="text" id="rg-cliente" minlength="12"/>
+
+                <label for="nascimento-cliente">Data de Nascimento <span>(opcional)</span></label>
+                <input type="date" id="nascimento-cliente" minlength="12"/>
+
+      
+        </fieldset>
+        <fieldset id="enderecamento">
+        
+                        <label for="uf">UF</label>
+                            <select name="estado" id="estado" form="formuf" required>
+                                <option value="Acre">AC</option>
+                                <option value="Alagoas">AL</option>
+                                <option value="Amapa">AP</option>
+                                <option value="Amazonas">AM</option>
+                                <option value="Bahia">BA</option>
+                                <option value="Ceara">CE</option>
+                                <option value="Espirito Santo">ES</option>
+                                <option value="Goias">GO</option>
+                                <option value="Maranhao">MA</option>
+                                <option value="Mato Grosso">MT</option>
+                                <option value="Mato Grosso do Sul">MS</option>
+                                <option value="Minas Gerais">MG</option>
+                                <option value="Para">PA</option>
+                                <option value="Paraiba">PB</option>
+                                <option value="Parana">PR</option>
+                                <option value="Pernambuco">PE</option>
+                                <option value="Piaui">PI</option>
+                                <option value="Rio de Janeiro">RJ</option>
+                                <option value="Rio Grande do Norte">RN</option>
+                                <option value="Rio Grande do Sul">RS</option>
+                                <option value="Rondonia">RO</option>
+                                <option value="Roraima">RR</option>
+                                <option value="Santa Catarina">SC</option>
+                                <option value="Sao Paulo">SP</option>
+                                <option value="Sergipe">SE</option>
+                                <option value="Tocantins">TO</option>
+                                <option value="Distrito Federal">DF</option>
+                            </select>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep-cliente" required minlength="8" maxlength="8"/>
+            
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade-cliente" required minlength="3"/>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro-cliente" required minlength="3"/>
+
+            <label for="endereco">Endereco</label>
+            <input type="text" id="endereco-cliente" required minlength="8"/>
+
+            <label for="complemento">Complemento</label>
+            <input type="text" id="complemento-cliente" required minlength="3"/>
+
+            <label for="numero">Número</label>
+            <input type="text" id="endereco-cliente" required minlength="1"/>
+
+        </fieldset>
+        <fieldset id="adicionais">
+            <label for="observacoes-cliente">Observações</label>
+            <textarea id="observacoes" name="observacoes-cliente" rows="5" cols="50" placeholder="Observações adocionais"></textarea>
+
+            <label for="expectativa">Expectativa de consumo <span>(Valor)</span></label>
+            <input type="text" id="expectativa"></input>
+
+            <label for="limite-credito">Credito desejado <span>(mediante avaliação)</span></label>
+            <input type="text" id="limite-credito"></input>
+
+        </fieldset>
+    </form>
+    <footer>
+        <input 
+        class="button" 
+        form="ficha-cadastral"
+        type="submit" 
+        value="Salvar">
+    </footer>
+</body>
+</html>
